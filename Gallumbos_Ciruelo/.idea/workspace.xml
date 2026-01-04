@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f0ca5ea7-9b05-4224-8e50-e768e71c05e7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CLASE_Lolita/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CLASE_Lolita/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CLASE_Lolita/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CLASE_Lolita/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EJERCICIO_KioskoKarlos/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LIMONESRAMONVERGAS/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LIMONESRAMONVERGAS/LimonConHuevos.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LIMONESRAMONVERGAS/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LIMONESRAMONVERGAS/tartaLimon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Macuesto-main/Enunciado" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Macuesto-main/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Macuesto-main/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyectos/LaWebDeTuEmpresa/imagenes/logoempresa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyectos/LaWebDeTuEmpresa/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="37nlyXz9AgHCJ3EqTJ5miBckV6g" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Merging main",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f0ca5ea7-9b05-4224-8e50-e768e71c05e7" name="Changes" comment="" />
+      <created>1767546971518</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1767546971518</updated>
+    </task>
+    <servers />
+  </component>
+</project>

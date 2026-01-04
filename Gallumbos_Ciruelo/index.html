@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallumbos Ciruelo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="imagenes/gallumbos_sinfondo2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor-header">
+
+            <div class="col izquierda">
+                <nav class="menu">
+                    <a href="#">Inicio</a>
+                    <a href="#">Productos</a>
+                    <a href="#">Colección</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Sobre nosotros</a>
+                </nav>
+            </div>
+
+            <div class="col centro">
+                <h1 class="logo">Gallumbos Ciruelo</h1>
+            </div>
+
+            <div class="col derecha"></div>
+
+        </div>
+    </header>
+
+    <section class="oferta-invierno">
+        <h2>OFERTAS DE INVIERNO</h2>
+        <p>¡CONSIGUE HASTA UN 40% DE DESCUENTO!</p>
+    </section>
+
+    <main class="layout">
+
+        <section id="nuestra-coleccion">
+
+            <h2>Nuestra colección</h2>
+
+            <hr>
+
+            <div class="productos">
+                <article class="producto casual">
+                    <figure>
+                        <img src="imagenes/modelo_1.png" alt="Gallumbo casual">
+                        <figcaption>MODELO CASUAL</figcaption>
+                    </figure>
+                    <p>Gallumbo hecho a medida para el día a día, con materiales naturales de un pueblo perdido de Murcia.</p>
+                    <p class="precio">PVP: 2,99€</p>
+                </article>
+
+                <article class="producto travieso">
+                    <figure>
+                        <img src="imagenes/modelo_2.png" alt="Gallumbo travieso">
+                        <figcaption>MODELO TRAVIESO</figcaption>
+                    </figure>
+                    <p>Hecho para los más traviesos. Para aquellos que quieren marcar lo que tienen.</p>
+                    <p class="precio">PVP: 4,99€</p>
+                </article>
+
+                <article class="producto triunfas">
+                    <figure>
+                        <img class="modelo3" src="imagenes/modelo_3.png" alt="Gallumbo Hoy Triunfas">
+                        <figcaption>MODELO HOY TRIUNFAS</figcaption>
+                    </figure>
+                    <p>Puede parecer igual que el modelo casual, y realmente es lo mismo. Pero hay un estudio de la universidad de Kansas que demuestra que el gris atrae a las hembras. Con estos gallumbos incrementas tu ratio de triunfo un 64,59%. Aunque si juegas al LOL, ni con estos ligas.</p>
+                    <p class="precio">PVP: 6,99€</p>
+                </article>
+            </div>
+
+        </section>
+
+        <section id="sobre_nosotros">
+            <h2>Sobre nosotros</h2>
+            <p class="p-sobrenosotros"><strong>Gallumbos Ciruelo</strong> es una marca española de ropa interior masculina que nace con la misión de sujetar los ciruelos como se debe, a precios competitivos.</p>
+            <p class="p-sobrenosotros">Nos dirigimos al hombre moderno que valora la calidad, el diseño y el confort en su día a día.</p>
+            <p class="p-sobrenosotros">Lo que nos caracteriza es nuestro material de <strong>gran calidad</strong>, junto a la <strong>mejor sujección</strong> de ciruelos que hay en el mercado.</p>
+        </section>
+
+        <section class="destacada">
+            <h2 id="porque-elegirnos">¿PORQUÉ ELEGIRNOS?</h2>
+            <ul>
+                <li>
+                    Precios competitivos
+                </li>
+                
+                <li>
+                    Diseño ergonómico
+                </li>
+
+                <li>
+                    Fabricado en pueblos perdidos de Murcia
+                </li>
+            </ul>
+        </section>
+
+        <section class="contacto">
+            <h2>Formulario de contacto</h2>
+            <p>
+                Si necesitas calzoncillos a medida, <span class="contactanos">contáctanos</span>. Si tienes un problema, no lo hagas.
+            </p>
+
+            <form action="#" method="post">
+                <label class="campo">
+                    <span>Nombre:</span>
+                    <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+                </label>
+
+                <label class="campo">
+                    <span>Correo electrónico:</span>
+                    <input type="email" name="correo" id="correo" placeholder="Tu nombre electrónico">
+                </label>
+
+                <label class="campo">
+                    <span>Tipo de consulta:</span>
+                    <select name="tipo_consulta" id="tipo_consulta">
+                        <option>Necesito calzoncillos a medida</option>
+                        <option>¿Cómo puedo ligar más con Gallumbos Ciruelo?</option>
+                        <option>Quiero trabajar con vosotros</option>
+                    </select>
+                </label>
+
+                <label class="campo">
+                    <span>Mensaje:</span>
+                    <textarea name="mensaje" rows="5" cols="40" placeholder="Cuéntanos qué necesitas"></textarea>
+                </label>
+
+                <div class="acciones">
+                    <button type="submit" class="btn btn-enviar">Enviar</button>
+                    <button type="reset" class="btn btn-borrar">Borrar</button>
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Gallumbos Ciruelo - Para tipos con criterio</p>
+            <address>
+                Contacto <a href="info@gallumbosciruelo.com">info@gallumbosciruelo.com</a><br>
+                Teléfono: <a href="+34688728647">+34688728647</a>
+            </address>
+        </footer>
+
+    </main>
+</body>
+</html>
