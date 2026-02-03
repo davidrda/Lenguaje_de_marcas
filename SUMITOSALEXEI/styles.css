@@ -1,87 +1,194 @@
-:root {
+/* =========================================================
+   VARIABLES CSS (Custom Properties)
+   =========================================================
+   :root representa el elemento raíz del documento (html).
+   Definir variables aquí permite reutilizarlas en todo el CSS
+   y facilita cambios de diseño (colores, sombras, radios, etc.)
+*/
+:root{
 
-    --bg: #f5f5f5;
-    --card: #ffffff;
-    --text: #1f2929;
+    /* Color de fondo general de la página */
+    --bg:#f5f6f7;
+
+    /* Color de fondo de tarjetas / bloques blancos */
+    --card:#fff;
+
+    /* Color principal del texto */
+    --text:#1f2929;
+
+    /* Color de texto secundario (menos importante) */
     --muted: #6f7777;
+
+    /* Color de acento (botones, enlaces, detalles visuales) */
     --accent: #33c26b;
-    --shadow: 0 8px 18px rgba(0,0,0, 0.2);
-    --r: 16px;
+
+    /* Sombra reutilizable para tarjetas y contenedores */
+    /* offset-x | offset-y | blur | color */
+    --shadow: 0 8px 18px rgba(0,0,0, .2);
+
+    /* Radio base para bordes redondeados */
+    --r:16px;
 }
 
+/* =========================================================
+   RESET BÁSICO
+   =========================================================
+   box-sizing: border-box hace que el padding y el borde
+   se incluyan dentro del ancho/alto del elemento.
+   Evita muchos problemas de cálculo en layouts.
+*/
 * {
-   box-sizing: border-box; 
+    box-sizing:border-box;
 }
 
+/* =========================================================
+   ESTILOS GENERALES DEL BODY
+   ========================================================= */
 body {
 
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--bg);
-    color: var(--text);
-    line-height: 1.35;
+   /* Eliminamos el margen por defecto del navegador */
+   margin:0;
+
+   /* Fuente base de la página */
+   font-family: Arial, Helvetica, sans-serif;
+
+   /* Color de fondo usando variable */
+   background-color: var(--bg);
+
+   /* Color base del texto */
+   color:var(--text);
+
+   /* Altura de línea para mejorar legibilidad */
+   line-height: 1.35;   
 }
 
+/* =========================================================
+   IMÁGENES RESPONSIVAS
+   ========================================================= */
 img {
 
+    /* La imagen nunca será más ancha que su contenedor */
     max-width: 100%;
+
+    /* Evita el pequeño espacio inferior que dejan las imágenes inline */
     display: block;
 }
 
+/* =========================================================
+   CONTENEDOR PRINCIPAL DE LA PÁGINA
+   ========================================================= */
 .layout {
 
+    /* La página ocupa al menos toda la altura de la ventana */
     min-height: 100vh;
+
+    /* Ancho máximo del contenido */
     max-width: 1200px;
+
+    /* Centramos el layout horizontalmente */
     margin: 0 auto;
-    display: grid;
+
+    /* Activamos CSS Grid */
+    display:grid;
+
+    /* Dos columnas:
+       - main: 2 partes
+       - aside: 1 parte
+    */
     grid-template-columns: 2fr 1fr;
 
-    grid-template-areas:
-    "header  header"
-    "nav     nav"
-    "main    aside"
-    "footer  footer"
-    ;
-
+    /* Definición de áreas del grid */
+    grid-template-areas: 
+     "header  header"
+     "nav     nav"
+     "main    aside"
+     "footer  footer";
 }
 
-.site-header{grid-area:header;}
- 
-.site-nav{grid-area:nav;}
+/* =========================================================
+   ASIGNACIÓN DE ÁREAS DEL GRID
+   ========================================================= */
+.site-header{ grid-area:header; }
 
-.site-main{grid-area:main;
+.site-nav{ grid-area:nav; }
 
-    display: grid;
-    gap: 16px;
+.site-main{
+   grid-area:main;
+
+   /* El contenido del main también usa grid */
+   display: grid;
+
+   /* Separación entre elementos internos */
+   gap:16px;
 }
 
-.site-aside{grid-area:aside;}
+.site-aside{ grid-area:aside; }
 
-.site-footer{grid-area:footer;}
-.site-header{grid-area: header;
+.site-footer{ grid-area:footer; }
+
+/* =========================================================
+   CABECERA (HEADER)
+   ========================================================= */
+.site-header{
+
+    /* Fondo tipo tarjeta */
     background-color: var(--card);
+
+    /* Bordes redondeados */
     border-radius: var(--r);
+
+    /* Sombra suave */
     box-shadow: var(--shadow);
 
+    /* Espaciado interno */
+    padding: 14px;
+
+    /* Grid interno para organizar logo y acciones */
     display: grid;
 
-    grid-template-columns: 1fr auto ;
+    /* Dos columnas:
+       - Logo / marca
+       - Acciones (login, botones, etc.)
+    */
+    grid-template-columns: 1fr auto;
+
+    /* Alineación vertical centrada */
     align-items: center;
+
+    /* Espacio entre columnas */
     gap: 12px;
 }
 
-.brand {
+/* =========================================================
+   BLOQUE DE MARCA (LOGO + TEXTO)
+   ========================================================= */
+.brand{
 
-    display: grid;
-    grid-template-columns: 200px 1fr;
+    /* Grid para logo + nombre */
+    display:grid;
+
+    /* Primera columna fija (logo),
+       segunda flexible (texto) */
+    grid-template-columns: 201px 1fr;
+
+    /* Separación entre logo y texto */
     gap: 12px;
 
+    /* Centrado vertical */
     align-items: center;
 }
 
-.brand__logo {
+/* =========================================================
+   LOGO
+   ========================================================= */
+.brand__logo{
 
+    /* Ancho fijo del logo */
     width: 150px;
-    height: auto;
+
+    /* Altura fija */
+    height: 50px;
+
+    /* Ajuste de la imagen sin deformarla */
     object-fit: cover;
 }
